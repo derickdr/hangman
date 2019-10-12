@@ -38,7 +38,7 @@ img.hangman-post {
     max-height: 400px;
 }
 
-.active-key {
+.key {
     font-size: 1em;
     color: black;
     background-color: white;
@@ -55,16 +55,23 @@ img.hangman-post {
     cursor: pointer;
 }
 
-.active-key:hover {
+.key:hover {
     box-shadow: 2px 2px 3px lightblue;
 }
 
-.inactive-key {
-    color: none;
-    border: none;
-    min-width: 1em;
-    min-height: 1em;
+.deactivated-key {
+    font-size: 1em;
+    color: white;
+    background-color: red;
+    border: 2px solid red;
+    border-radius: 0.5em;
     box-sizing: border-box;
+    transform: translate(-2px -2px);
+    box-shadow: 3px 3px 4px lightpink;
+    text-align: center;
+    min-height: 0.5em;
+    min-width: 2em;
+    padding: 0.25em;
     margin: 0.25em;
 }
 

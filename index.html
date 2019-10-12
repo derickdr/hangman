@@ -1,9 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+
+        $('.key').click(function() {
+            $(this).removeClass('/');
+            $(this).addClass('deactivated-key');
+        });
+
+</script>
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
     <title>Hangman Game</title>
 </head>
@@ -13,52 +21,49 @@
         <h1 class='header'>Welcome to Hangman!</h1>
     </div>
     <div class='hangman-graphic-container'>
-        <img class='hangman-post' src='assets/hangman-post.png'>
+        <img class='hangman-post' src='assets/img/hangman-post.png'>
     </div>
     <div class='goal-container'>
         <div class='word-text-container'>
-            <h2 class='word-letter'>H</h2>
-            <h2 class='word-letter'>A</h2>
-            <h2 class='word-letter'>N</h2>
-            <h2 class='word-letter'>G</h2>
+            <script src="./assets/scripts/jQuery.js">
+                const test = document.createElement('h2');
+                test.setAttribute('class', 'word-letter');
+                return test;
+            </script>
         </div>
     </div>
     <div class='keyboard-container'>
         <div class='keyboard-row'>
-            <button id='keyA' class='active-key'>A</button>
-            <button id='keyB' class='active-key'>B</button>
-            <button id='keyC' class='active-key'>C</button>
-            <button id='keyD' class='active-key'>D</button>
-            <button id='keyE' class='active-key'>E</button>
-            <button id='keyF' class='active-key'>F</button>
-            <button id='keyG' class='active-key'>G</button>
-            <button id='keyH' class='active-key'>H</button>
-            <button id='keyI' class='active-key'>I</button>
-            <button id='keyJ' class='active-key'>J</button>
+            <button id='A' class='key'>A</button>
+            <button id='B' class='key'>B</button>
+            <button id='C' class='key'>C</button>
+            <button id='D' class='key'>D</button>
+            <button id='E' class='key'>E</button>
+            <button id='F' class='key'>F</button>
+            <button id='G' class='key'>G</button>
+            <button id='H' class='key'>H</button>
+            <button id='I' class='key'>I</button>
+            <button id='J' class='key'>J</button>
         </div>
         <div class='keyboard-row'>
-            <button id='keyK' class='active-key'>K</button>
-            <button id='keyL' class='active-key'>L</button>
-            <button id='keyM' class='active-key'>M</button>
-            <button id='keyN' class='active-key'>N</button>
-            <button id='keyO' class='active-key'>O</button>
-            <button id='keyP' class='active-key'>P</button>
-            <button id='keyQ' class='active-key'>Q</button>
-            <button id='keyR' class='active-key'>R</button>
-            <button id='keyS' class='active-key'>S</button>
-            <button id='keyT' class='active-key'>T</button>
+            <button id='K' class='key'>K</button>
+            <button id='L' class='key'>L</button>
+            <button id='M' class='key'>M</button>
+            <button id='N' class='key'>N</button>
+            <button id='O' class='key'>O</button>
+            <button id='P' class='key'>P</button>
+            <button id='Q' class='key'>Q</button>
+            <button id='R' class='key'>R</button>
+            <button id='S' class='key'>S</button>
+            <button id='T' class='key'>T</button>
         </div>
         <div class='keyboard-row'>
-            <button class='inactive-key'></button>
-            <button class='inactive-key'></button>
-            <button id='keyU' class='active-key'>U</button>
-            <button id='keyV' class='active-key'>V</button>
-            <button id='keyW' class='active-key'>W</button>
-            <button id='keyQ' class='active-key'>X</button>
-            <button id='keyY' class='active-key'>Y</button>
-            <button id='keyZ' class='active-key'>Z</button>
-            <button class='inactive-key'></button>
-            <button class='inactive-key'></button>
+            <button id='U' class='key'>U</button>
+            <button id='V' class='key'>V</button>
+            <button id='W' class='key'>W</button>
+            <button id='Q' class='key'>X</button>
+            <button id='Y' class='key'>Y</button>
+            <button id='Z' class='key'>Z</button>
         </div>
     </div>
     <div class='footer-container'>
