@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    padding: 0% 25% 0%;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+.header-container, .goal-container, .keyboard-container, .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.25em;
+}
+
+.hangman-graphic-container {
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    min-width: 200px;
+    min-height: 400px
+}
+
+.word-text-container, .keyboard-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 3em;
+
+}
+
+img.hangman-post {
+    min-width: 200px;
+    max-height: 400px;
+}
+
+.active-key {
+    font-size: 1em;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 0.5em;
+    box-sizing: border-box;
+    transform: translate(-2px -2px);
+    box-shadow: 3px 3px 4px grey;
+    text-align: center;
+    min-height: 0.5em;
+    min-width: 2em;
+    padding: 0.25em;
+    margin: 0.25em;
+    cursor: pointer;
+}
+
+.active-key:hover {
+    box-shadow: 2px 2px 3px lightblue;
+}
+
+.inactive-key {
+    color: none;
+    border: none;
+    min-width: 1em;
+    min-height: 1em;
+    box-sizing: border-box;
+    margin: 0.25em;
+}
+
+.word-letter {
+    box-sizing: border-box;
+    border-bottom: 3px solid black;
+    min-width: 1em;
+    min-height: 1em;
+    padding: 0.1em;
+    margin: 0.5em;
+}
