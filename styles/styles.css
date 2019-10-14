@@ -45,8 +45,7 @@ img.hangman-post {
     border: 2px solid black;
     border-radius: 0.5em;
     box-sizing: border-box;
-    transform: translate(-2px -2px);
-    box-shadow: 3px 3px 4px grey;
+    box-shadow: 2px 2px 4px grey;
     text-align: center;
     min-height: 0.5em;
     min-width: 2em;
@@ -66,8 +65,7 @@ img.hangman-post {
     border: 2px solid red;
     border-radius: 0.5em;
     box-sizing: border-box;
-    transform: translate(-2px -2px);
-    box-shadow: 3px 3px 4px lightpink;
+    box-shadow: 2px 2px 4px lightpink;
     text-align: center;
     min-height: 0.5em;
     min-width: 2em;

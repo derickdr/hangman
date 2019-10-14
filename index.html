@@ -4,19 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-
-        $('.key').click(function() {
-            $(this).removeClass('/');
-            $(this).addClass('deactivated-key');
-        });
-
-</script>
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
     <title>Hangman Game</title>
 </head>
 <body>
-
+    
     <div class='header-container'>
         <h1 class='header'>Welcome to Hangman!</h1>
     </div>
@@ -25,11 +17,10 @@
     </div>
     <div class='goal-container'>
         <div class='word-text-container'>
-            <script src="./assets/scripts/jQuery.js">
-                const test = document.createElement('h2');
-                test.setAttribute('class', 'word-letter');
-                return test;
-            </script>
+            <h2 class='word-letter'>H</h2>
+            <h2 class='word-letter'>E</h2>
+            <h2 class='word-letter'>L</h2>
+            <h2 class='word-letter'>P</h2>
         </div>
     </div>
     <div class='keyboard-container'>
@@ -69,6 +60,9 @@
     <div class='footer-container'>
         <h3 class='footer-signature'>Built by Derick Del Rosario</h3>
     </div>
-
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/scripts/jQuery.js"></script>
+    
 </body>
 </html>
